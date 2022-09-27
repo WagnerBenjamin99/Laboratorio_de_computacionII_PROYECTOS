@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+    <head>
+    </head>
+
+    <body>
+        <div id="contenedor">
+            <header>
+            </header>
+
+            <main>
+                
+                    <form action="">
+                        
+                    <ul>
+                        <h2> DATOS DE PAGO </h2>
+                    <li>
+                        <p> 
+                            <label for="in_cv_nombre" > <b>Nombre</b>  </label>
+                        </p>
+                        <input type="text" id="in_cv_nombre" name="cv_nombre" placeholder="Su nombre" >
+                    </li>
+                    <li>
+                        <p> 
+                            <label for="in_cv_apellido"> <b>Apellido</b>  </label>
+                        </p>
+                        <input type="text" id="in_cv_apellido" name="cv_apellido" placeholder="Su apellido" >
+                    </li>
+                    <li>
+                        <p> 
+                            <label for="in_cv_dni"> <b>DNI</b>  </label>
+                        </p>
+                        <input type="text" id="in_cv_dni" name="cv_dni"  placeholder="38123456">
+                    </li>
+                    <li>
+                        <p>
+                            <label for="inEmail" ><b> EMAIL </b> </label>
+                        </p>
+                        <input type="email" id="inEmail" placeholder="user@hotmail.com">
+                    </li>
+                    <li>
+                        <P> <b> NUMERO DE CUOTAS</b>  </P>
+                        <p> 
+                            <input type="radio" name="pago_cuotas" value="1"  id="cuotas_1">
+                            <label for="cuotas_1"> 1 </label>
+                        </p>
+                        <p>
+                            <input type="radio" name="pago_cuotas" value="3"  id="cuotas_3">
+                            <label for="cuotas_3"> 3 </label>
+                        </p>   
+                        <p>
+                            <input type="radio" name="pago_cuotas" value="6"  id="cuotas_6">
+                            <label for="cuotas_6"> 6 </label>
+                        </p>   
+                    </li>
+                    <li>
+                        <p> 
+                            <label for="checkTicket "> <b>Recibir Ticket por Email. <b> </label>
+                            <input type="checkbox" id="checkTicket" name="pago_ticket">
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <button type="submit"> Confirmar compra </button>
+                    </li>
+                    
+                    
+                </ul>
+                    </form>
+                    
+            </main>
+
+            <footer>
+            </footer>
+
+        </div>
+    </body>
+</html>
+<style>
+    form{
+        margin: auto;
+        border: 1px solid green;
+        background-color: greenyellow;
+        width: 400px;
+    }
+    ul li{
+        list-style-type: none;
+    }
+</style>
