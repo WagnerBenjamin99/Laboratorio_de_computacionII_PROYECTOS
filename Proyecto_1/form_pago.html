@@ -13,7 +13,9 @@
                     <form action="">
                         
                     <ul>
-                        <h2> DATOS DE PAGO </h2>
+                        <h2> FORMULARIO DE PAGO </h2>
+                    <fieldset>
+                        <legend> DATOS PERSONALES </legend>
                     <li>
                         <p> 
                             <label for="in_cv_nombre" > <b>Nombre</b>  </label>
@@ -38,9 +40,17 @@
                         </p>
                         <input type="email" id="inEmail" placeholder="user@hotmail.com">
                     </li>
+                    </fieldset>
                     <fieldset>
-                    <legend>NUMERO DE CUOTAS</legend>
+                    <legend>DATOS DE PAGO</legend>
                     <li>
+                        <p> 
+                            <label for="in_numero_tarjeta" > <b>NUMERO DE TARJETA</b>  </label>
+                        </p>
+                        <input type="text" id="in_numero_tarjeta" name="pago_tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" >
+                    </li>
+                    <li>
+                        <p> <b>NUMERO DE CUOTAS </b> </p>
                         <p> 
                             <input type="radio" name="pago_cuotas" value="1"  id="cuotas_1">
                             <label for="cuotas_1"> 1 </label>
@@ -55,9 +65,10 @@
                         </p>   
                     </li>
                 </fieldset>
+
                     <li>
                         <p> 
-                            <label for="checkTicket "> <b>Recibir Ticket por Email. <b> </label>
+                            <label for="checkTicket "> <b>Recibir Ticket via Email <b> </label>
                             <input type="checkbox" id="checkTicket" name="pago_ticket">
                         </p>
                         
@@ -68,7 +79,7 @@
                     
                     
                 </ul>
-                    </form>
+                </form>
                     
             </main>
 
@@ -86,9 +97,12 @@
         margin: auto;
         border: 1px solid green;
         background-color: greenyellow;
-        width: 400px;
+        width: 25%;
     }
     ul li{
         list-style-type: none;
+    }
+    form ul{
+        margin-right: 10%;
     }
 </style>
